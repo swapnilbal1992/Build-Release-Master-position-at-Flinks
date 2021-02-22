@@ -9,10 +9,9 @@ stages:
 - stage: Dev
   displayName: Dev
   jobs:
-  - job: Docker jobs
+  - job: Dockerjobs
     displayName: Dev
     steps:
     - bash: |
         docker build -t surya1995/python-http:1.0.0 .
       displayName: 'docker build'
-
